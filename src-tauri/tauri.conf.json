@@ -10,9 +10,9 @@
     "withGlobalTauri": true,
     "windows": [
       {
-"title": "PlanCut",
-       "width": 1400,
-"height": 900
+        "title": "PlanCut",
+        "width": 1400,
+        "height": 900
       }
     ],
     "security": {
@@ -22,6 +22,7 @@
   "bundle": {
     "active": true,
     "targets": "all",
+    "createUpdaterArtifacts": true,
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -29,5 +30,13 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ]
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/rierag877-sys/PlanCut/releases/latest/download/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDlBQUQzMjFGMDI1ODhCRjEKUldUeGkxZ0NIekt0bWhVS2srZ0VLNHVVSjZPS0pvbVJkdjEwMGtXT3FOSkpkV0Q0KzBDaXpSYm0K"
+    }
   }
 }
